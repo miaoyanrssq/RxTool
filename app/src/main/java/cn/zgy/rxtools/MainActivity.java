@@ -8,6 +8,8 @@ import com.vise.log.ViseLog;
 import com.vise.log.inner.ConsoleTree;
 import com.vise.log.inner.FileTree;
 import com.vise.log.inner.LogcatTree;
+import cn.zgy.rxtools.BuildConfig;
+import cn.zgy.rxtools.R;
 
 import cn.zgy.rxtool.RxAppTool;
 import cn.zgy.rxtool.RxDataTool;

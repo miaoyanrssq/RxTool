@@ -12,7 +12,7 @@ public class RxConstants {
     /**
      * RxTools的Github地址
      */
-    public static final String URL_VONTOOLS = "https://github.com/vondear/RxTools";
+    public static final String URL_VONTOOLS = "https://github.cn.zgy.rxview";
 
     /**
      * 百度文字搜索

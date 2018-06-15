@@ -1,1 +1,1 @@
-include ':app', ':rxtool'
+include ':app', ':rxtool', ':rxview'

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_jars__:/Users/gaoyangzhen/AndroidStudioProjects/source/RxTool/rxview/libs/alipaySdk-20170309.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rxview/libs/alipaySdk-20170309.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
