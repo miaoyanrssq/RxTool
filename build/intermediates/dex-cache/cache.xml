@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/gaoyangzhen/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.systembartint/systembartint/1.0.3/de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287/systembartint-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287">
+        <dex dex="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/app/build/intermediates/pre-dexed/debug/systembartint-1.0.3_eb07e5f3cc8fdcf15817edf46cd9dadda9ad2d28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/app/build/intermediates/exploded-aar/cn.daily.android/viselog/0.0.1-SNAPSHOT/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5d2ee39f0364b28379d618ea5085486b2ea81418">
+        <dex dex="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/app/build/intermediates/pre-dexed/debug/cn.daily.android-viselog-0.0.1-SNAPSHOT_073340b9a22e14f44fd31d0eb0669b55ab281d49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gaoyangzhen/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/app/build/intermediates/pre-dexed/debug/core-3.3.0_f9db5e1fea9aaa3daabed0faafd03a4ce994b484.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/rxtool/build/intermediates/bundles/default/libs/zip4j_1.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="29069ce9f05f94b95dda377d64a75df7bf169332">
+        <dex dex="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/app/build/intermediates/pre-dexed/debug/zip4j_1.3.2_e53c3c51e6e78fd50b110eefeccceaa457028e56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/rxtool/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="001e454a68c71490fad645f9e371e6e28cc6e0aa">
+        <dex dex="/Users/gaoyangzhen/AndroidStudioProjects/someTestProect/Rxtools/app/build/intermediates/pre-dexed/debug/classes_6fe9da3d1e4455237448aa04319f082415f50462.jar" />
+    </item>
+
+</items>
