@@ -96,6 +96,15 @@
         </activity>
         <activity android:name=".activity.ActivityXmlParse">
         </activity>
+
+
+        <activity android:name=".activity.OtherActivity">
+        </activity>
+        <activity android:name=".activity.BannerActivity">
+        </activity>
+        <activity android:name=".activity.GallerySimpleActivity">
+        </activity>
+
     </application>
 
 </manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <cn.zgy.rxview.view.banner.BannerView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:banner_autoMs="4000"
+        app:banner_isAuto="true"
+        app:banner_pagerPaddingLeft="40dp"
+        app:banner_pagerPaddingRight="40dp"
+        app:banner_w2h="280:150">
+
+    </cn.zgy.rxview.view.banner.BannerView>
+
+</LinearLayout>
