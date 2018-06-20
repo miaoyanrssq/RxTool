@@ -140,6 +140,7 @@
     <orderEntry type="library" exported="" name="Gradle: cn.daily.android:viselog-0.0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.android.support:support-core-utils-25.3.1" level="project" />
     <orderEntry type="module" module-name="rxview" exported="" />
+    <orderEntry type="module" module-name="multitype" exported="" />
     <orderEntry type="module" module-name="rxtool" exported="" />
   </component>
 </module>

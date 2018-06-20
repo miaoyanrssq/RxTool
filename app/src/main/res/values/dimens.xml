@@ -26,4 +26,13 @@
     <dimen name="shopping_cart_total_price_word_size">20sp</dimen>
     <dimen name="shopping_cart_small_size">15sp</dimen>
     <dimen name="shopping_cart_bottom_recycle_height">250dp</dimen>
+
+
+    <dimen name="message_border_width">2dp</dimen>
+    <dimen name="message_margin_top">6dp</dimen>
+
+    <dimen name="category_icon_size">24dp</dimen>
+    <dimen name="normal_space">12dp</dimen>
+    <dimen name="small_space">6dp</dimen>
+    <dimen name="post_image_height">96dp</dimen>
 </resources>

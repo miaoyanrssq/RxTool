@@ -105,6 +105,9 @@
         <activity android:name=".activity.GallerySimpleActivity">
         </activity>
 
+        <activity android:name=".multitype.normal.NormalActivity">
+        </activity>
+
     </application>
 
 </manifest>

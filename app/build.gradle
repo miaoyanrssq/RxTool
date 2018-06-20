@@ -31,6 +31,7 @@ dependencies {
 
     compile project(':rxview')
     compile project(':rxtool')
+    compile project(':multitype')
     compile 'cn.daily.android:viselog:0.0.1-SNAPSHOT'
 
     compile 'com.android.support:design:25.3.1'

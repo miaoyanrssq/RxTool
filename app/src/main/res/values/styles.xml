@@ -20,4 +20,11 @@
         <item name="android:windowActionModeOverlay">true</item>
     </style>
 
+    <style name="Simple"/>
+
+    <style name="Simple.Frame">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/square_border</item>
+    </style>
+
 </resources>
