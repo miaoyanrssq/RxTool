@@ -23,6 +23,7 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
     private void initView() {
         findViewById(R.id.banner).setOnClickListener(this);
         findViewById(R.id.multitype).setOnClickListener(this);
+        findViewById(R.id.rxeasyhttp).setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +34,10 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
 
         if(v.getId() == R.id.multitype){
             RxActivityTool.skipActivity(this, NormalActivity.class);
+        }
+
+        if(v.getId() == R.id.rxeasyhttp){
+            RxActivityTool.skipActivity(this, RxEasyHttpActivity.class);
         }
     }
 }

@@ -20,4 +20,11 @@
         android:text="MultiType"
         />
 
+    <Button
+        android:id="@+id/rxeasyhttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RxEasyHttp"
+        />
+
 </LinearLayout>

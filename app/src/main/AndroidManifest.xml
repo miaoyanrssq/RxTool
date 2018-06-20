@@ -108,6 +108,9 @@
         <activity android:name=".multitype.normal.NormalActivity">
         </activity>
 
+        <activity android:name=".activity.RxEasyHttpActivity">
+        </activity>
+
     </application>
 
 </manifest>
