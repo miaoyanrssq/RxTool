@@ -2,7 +2,7 @@
 
  可适配所有视图的下拉刷新上拉加载，并支持各种风格。
  
- ![](./screenshot/Refresh.gif)  
+ ![](./pic/Refresh.gif)  
 
 ## 添加依赖
 ```
