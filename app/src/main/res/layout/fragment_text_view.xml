@@ -1,0 +1,28 @@
+<cn.zgy.refresh.RefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:can_bg_down="@color/google_green"
+    app:can_bg_up="@color/google_red">
+
+
+    <TextView
+        android:id="@+id/can_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:lineSpacingExtra="5dp"
+        android:padding="20dp" />
+
+
+    <cn.zgy.refresh.classic.ClassicRefreshView
+        android:id="@id/can_refresh_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.zgy.refresh.classic.ClassicRefreshView
+        android:id="@id/can_refresh_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</cn.zgy.refresh.RefreshLayout>

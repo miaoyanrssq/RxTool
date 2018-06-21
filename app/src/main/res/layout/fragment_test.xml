@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_normal_big">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:text="剧情简介"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="方法，我已开始是在onPageSelected方法中通过viewpager.getChildAt(arg0)方式，想获取当前显示的view。不过这样，超过3个view以后就会报空指针错误，获取的view就会为空，跟踪发现arg0大于2以后就获取view为空。所以我猜测viewpager里面最多有3个view，超过三个的时候就把旧的回收了。那么当前显示的，除了第一个和最后一个，那么都应该是中间的那个，也就是arg0为1的那个。于是我判断，除了第一个和最后一个，其它的arg0都等于1，发现不报错了"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/text_small_little" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_line"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="作者信息"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/text_small" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_normal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_small"
+
+                    android:text="土豆"
+                    android:textColor="@color/black2"
+
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="粉丝"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/text_little_super" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/dimen_small"
+
+                android:paddingRight="@dimen/dimen_small"
+                android:paddingTop="2dp"
+                android:text="粉Ta"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/text_little" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_line"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:background="@color/line" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="作者公告"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/text_small" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="这个作者太懒了，什么都没说。"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/text_small_little" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_line"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+
+            android:drawablePadding="@dimen/dimen_small"
+            android:gravity="center_vertical"
+            android:text="作者作品"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/text_small" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="方法，我已开始是在onPageSelected方法中通过viewpager.getChildAt(arg0)方式，想获取当前显示的view。不过这样，超过3个view以后就会报空指针错误，获取的view就会为空，跟踪发现arg0大于2以后就获取view为空。所以我猜测viewpager里面最多有3个view，超过三个的时候就把旧的回收了。那么当前显示的，除了第一个和最后一个，那么都应该是中间的那个，也就是arg0为1的那个。于是我判断，除了第一个和最后一个，其它的arg0都等于1，发现不报错了"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/text_small_little" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="方法，我已开始是在onPageSelected方法中通过viewpager.getChildAt(arg0)方式，想获取当前显示的view。不过这样，超过3个view以后就会报空指针错误，获取的view就会为空，跟踪发现arg0大于2以后就获取view为空。所以我猜测viewpager里面最多有3个view，超过三个的时候就把旧的回收了。那么当前显示的，除了第一个和最后一个，那么都应该是中间的那个，也就是arg0为1的那个。于是我判断，除了第一个和最后一个，其它的arg0都等于1，发现不报错了"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/text_small_little" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginRight="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="方法，我已开始是在onPageSelected方法中通过viewpager.getChildAt(arg0)方式，想获取当前显示的view。不过这样，超过3个view以后就会报空指针错误，获取的view就会为空，跟踪发现arg0大于2以后就获取view为空。所以我猜测viewpager里面最多有3个view，超过三个的时候就把旧的回收了。那么当前显示的，除了第一个和最后一个，那么都应该是中间的那个，也就是arg0为1的那个。于是我判断，除了第一个和最后一个，其它的arg0都等于1，发现不报错了"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/text_small_little" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

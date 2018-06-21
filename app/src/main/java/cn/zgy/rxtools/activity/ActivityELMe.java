@@ -41,7 +41,7 @@ import cn.zgy.rxview.view.RxTitle;
  * @author vondear
  */
 public class ActivityELMe extends ActivityBase implements AdapterLeftMenu.onItemSelectedListener, ShopCartInterface, RxDialogShopCart.ShopCartDialogImp {
-    private final static String TAG = "MainActivity";
+    private final static String TAG = "MainRefreshActivity";
     @BindView(R.id.rx_title)
     RxTitle mRxTitle;
     @BindView(R.id.shopping_cart_total_tv)

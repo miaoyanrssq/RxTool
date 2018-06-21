@@ -36,6 +36,7 @@ dependencies {
     compile project(':rxtool')
     compile project(':multitype')
     compile project(':rxeasyhttp')
+    compile project(':refresh')
     compile 'cn.daily.android:viselog:0.0.1-SNAPSHOT'
 
     compile 'com.android.support:design:25.3.1'
@@ -55,6 +56,9 @@ dependencies {
     compile 'com.github.google:cameraview:3eaeac09a7'
     compile 'com.orhanobut:logger:2.2.0'
     compile 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    compile 'com.canyinghao:canadapter:1.2.7'
+    compile 'com.canyinghao:canrecyclerview:1.4.1'
 
     configurations.all {
         resolutionStrategy {

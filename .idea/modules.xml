@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/RxTool.iml" filepath="$PROJECT_DIR$/RxTool.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/multitype/multitype.iml" filepath="$PROJECT_DIR$/multitype/multitype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh/refresh.iml" filepath="$PROJECT_DIR$/refresh/refresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxeasyhttp/rxeasyhttp.iml" filepath="$PROJECT_DIR$/rxeasyhttp/rxeasyhttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxtool/rxtool.iml" filepath="$PROJECT_DIR$/rxtool/rxtool.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxview/rxview.iml" filepath="$PROJECT_DIR$/rxview/rxview.iml" />

@@ -7,6 +7,7 @@ import android.view.View;
 import cn.zgy.rxtool.RxActivityTool;
 import cn.zgy.rxtools.R;
 import cn.zgy.rxtools.multitype.normal.NormalActivity;
+import cn.zgy.rxtools.refresh.activity.MainRefreshActivity;
 import cn.zgy.rxview.activity.ActivityBase;
 
 public class OtherActivity extends ActivityBase implements View.OnClickListener{
@@ -24,6 +25,7 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
         findViewById(R.id.banner).setOnClickListener(this);
         findViewById(R.id.multitype).setOnClickListener(this);
         findViewById(R.id.rxeasyhttp).setOnClickListener(this);
+        findViewById(R.id.refresh).setOnClickListener(this);
     }
 
     @Override
@@ -38,6 +40,9 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
 
         if(v.getId() == R.id.rxeasyhttp){
             RxActivityTool.skipActivity(this, RxEasyHttpActivity.class);
+        }
+        if(v.getId() == R.id.refresh){
+            RxActivityTool.skipActivity(this, MainRefreshActivity.class);
         }
     }
 }
