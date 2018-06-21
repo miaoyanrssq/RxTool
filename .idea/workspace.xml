@@ -11,114 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ea72e4f-2acf-41d7-ab75-27ed6921d3c1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/MainBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/CooActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/CooActivity2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/CustomActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/MainRefreshActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/RvActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/ScrollActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/activity/ViewActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/BaseFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/LinearLayoutFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/ListViewFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/RVRefreshFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/RVRefreshFragment1.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/ScrollViewFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/TestFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/TestFragment1.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/refresh/fragment/TextViewFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_coo.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_coo2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mainrefresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pager.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pager2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_linear.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_listview.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rv_classic.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rv_google.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rv_load.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rv_store.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rv_yalantis.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_scroll_view.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_test.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_test1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_text_view.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_main.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_dialog_config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/Refresh.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/proguard-rules.pro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/androidTest/java/cn/zgy/refresh/ExampleInstrumentedTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/AndroidManifest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/Refresh.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/RefreshLayout.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/classic/ClassicRefreshView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/classic/RotateRefreshView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/google/GoogleCircleHookRefreshView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/google/GoogleCircleProgressView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/google/MaterialProgressDrawable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/shapeloading/ShapeLoadingRefreshView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/shapeloading/ShapeLoadingView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/storehouse/StoreHouseBarItem.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/storehouse/StoreHouseDisplay.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/storehouse/StoreHousePath.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/storehouse/StoreHouseRefreshView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/yalantis/BaseRefreshDrawable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/yalantis/SunRefreshDrawable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/java/cn/zgy/refresh/yalantis/YalantisPhoenixRefreshView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/anim/rotate_down.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/anim/rotate_up.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/drawable/shape_shadow.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/layout/layout_classic_refresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/layout/layout_google_refresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/layout/layout_rotate_refresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/layout/layout_shape_refresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/layout/layout_yalantis_refresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/mipmap-xhdpi/classic_pull_arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/mipmap-xhdpi/rotate_progress.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/mipmap-xhdpi/yalantis_phoenix_buildings.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/mipmap-xhdpi/yalantis_phoenix_sky.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/mipmap-xhdpi/yalantis_phoenix_sun.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/values/attrs_google.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/values/attrs_refresh.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/values/colors.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/values/dimens.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/values/ids.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/main/res/values/strings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/refresh/src/test/java/cn/zgy/refresh/ExampleUnitTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/screenshot/Refresh.gif" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/annotation-processors.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/activity/ActivityELMe.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/activity/ActivityELMe.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/activity/OtherActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/activity/OtherActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_other.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_other.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-15-15-46-21-899.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/refresh/Refresh.md" afterPath="$PROJECT_DIR$/refresh/Refresh.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -209,12 +103,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Refresh.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Refresh.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/refresh/Refresh.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <first_editor relative-caret-position="68">
+                <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -222,12 +116,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="518">
-                <caret line="741" column="22" lean-forward="false" selection-start-line="741" selection-start-column="22" selection-end-line="741" selection-end-column="22" />
+              <first_editor relative-caret-position="1960">
+                <caret line="742" column="0" lean-forward="true" selection-start-line="742" selection-start-column="0" selection-end-line="742" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -6931,8 +6825,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/refresh/Refresh.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/refresh/Refresh.md" />
       </list>
     </option>
   </component>
@@ -7041,6 +6935,11 @@
             <path>
               <item name="RxTool" type="b2602c69:ProjectViewProjectNode" />
               <item name="RxTool" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxTool" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="refresh" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -7850,22 +7749,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/refresh/Refresh.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <first_editor relative-caret-position="1960">
+            <caret line="742" column="0" lean-forward="true" selection-start-line="742" selection-start-column="0" selection-end-line="742" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/refresh/Refresh.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="518">
-            <caret line="741" column="22" lean-forward="false" selection-start-line="741" selection-start-column="22" selection-end-line="741" selection-end-column="22" />
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             <folding />
           </first_editor>
           <second_editor />
