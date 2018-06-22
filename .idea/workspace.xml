@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="139225fe-8aa1-4a6d-8b99-fb04e0a5e954" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/demo.apk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/demo.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rxtool/rxtool.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rxview/rxview.md" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/photoview/.gitignore" afterPath="$PROJECT_DIR$/photoview/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/photoview/photoview.md" afterPath="$PROJECT_DIR$/photoview/photoview.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,8 +77,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="153">
-                <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <first_editor relative-caret-position="423">
+                <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -7504,12 +7498,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_other.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/activity/OtherActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/zgy/rxtools/photoview/PhotoViewMainActivity.java" />
-        <option value="$PROJECT_DIR$/photoview/photoview.md" />
         <option value="$PROJECT_DIR$/photoview/.gitignore" />
         <option value="$PROJECT_DIR$/rxtool/rxtool.md" />
         <option value="$PROJECT_DIR$/rxview/rxview.md" />
         <option value="$PROJECT_DIR$/demo.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/photoview/photoview.md" />
       </list>
     </option>
   </component>
@@ -7945,19 +7939,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photoview/photoview.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="491">
-            <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-            <folding>
-              <marker date="1529637256272" expanded="true" signature="508:695" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -8066,11 +8047,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/photoview/photoview.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="280">
+            <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <folding>
+              <marker date="1529638129846" expanded="true" signature="508:695" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <first_editor relative-caret-position="423">
+            <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             <folding />
           </first_editor>
           <second_editor />

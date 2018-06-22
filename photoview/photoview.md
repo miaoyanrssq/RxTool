@@ -35,7 +35,7 @@ PhotoView photoView = (PhotoView) findViewById(R.id.img);
 // 启用图片缩放功能
 photoView.enable();
 // 启用图片旋转功能
-mPhotoView.enableRotate();
+photoView.enableRotate();
 // 禁用图片缩放功能 (默认为禁用，会跟普通的ImageView一样，缩放功能需手动调用enable()启用)
 photoView.disenable();
 // 获取图片信息
