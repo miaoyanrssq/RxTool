@@ -34,4 +34,11 @@
         android:text="Refresh"
         />
 
+    <Button
+        android:id="@+id/photoview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PhotoView"
+        />
+
 </LinearLayout>

@@ -135,6 +135,18 @@
         </activity>
 
 
+        <activity android:name=".photoview.ImageViewActivity">
+        </activity>
+        <activity android:name=".photoview.ImgActivity">
+        </activity>
+        <activity android:name=".photoview.ImgClick">
+        </activity>
+        <activity android:name=".photoview.PhotoBrowse">
+        </activity>
+        <activity android:name=".photoview.PhotoViewMainActivity">
+        </activity>
+        <activity android:name=".photoview.ViewPagerActivity">
+        </activity>
     </application>
 
 </manifest>

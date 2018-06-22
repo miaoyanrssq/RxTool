@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/../photoview" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -148,6 +148,7 @@
     <orderEntry type="module" module-name="refresh" exported="" />
     <orderEntry type="module" module-name="multitype" exported="" />
     <orderEntry type="module" module-name="rxeasyhttp" exported="" />
+    <orderEntry type="module" module-name="photoview" exported="" />
     <orderEntry type="module" module-name="rxtool" exported="" />
   </component>
 </module>
