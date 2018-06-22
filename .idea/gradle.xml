@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/rxeasyhttp" />
             <option value="$PROJECT_DIR$/rxtool" />
             <option value="$PROJECT_DIR$/rxview" />
+            <option value="$PROJECT_DIR$/switchview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

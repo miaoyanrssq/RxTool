@@ -41,4 +41,11 @@
         android:text="PhotoView"
         />
 
+    <Button
+        android:id="@+id/switchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SwitchView"
+        />
+
 </LinearLayout>

@@ -1,1 +1,1 @@
-include ':app', ':rxtool', ':rxview', ':multitype', ':rxeasyhttp', ':refresh', ':photoview'
+include ':app', ':rxtool', ':rxview', ':multitype', ':rxeasyhttp', ':refresh', ':photoview', ':switchview'

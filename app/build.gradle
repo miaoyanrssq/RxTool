@@ -38,6 +38,7 @@ dependencies {
     compile project(':rxeasyhttp')
     compile project(':refresh')
     compile project(':photoview')
+    compile project(':switchview')
     compile 'cn.daily.android:viselog:0.0.1-SNAPSHOT'
 
     compile 'com.android.support:design:25.3.1'

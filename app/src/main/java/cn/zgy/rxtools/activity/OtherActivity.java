@@ -9,6 +9,7 @@ import cn.zgy.rxtools.R;
 import cn.zgy.rxtools.multitype.normal.NormalActivity;
 import cn.zgy.rxtools.photoview.PhotoViewMainActivity;
 import cn.zgy.rxtools.refresh.activity.MainRefreshActivity;
+import cn.zgy.rxtools.switchview.SwitchViewActivity;
 import cn.zgy.rxview.activity.ActivityBase;
 
 public class OtherActivity extends ActivityBase implements View.OnClickListener{
@@ -28,6 +29,7 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
         findViewById(R.id.rxeasyhttp).setOnClickListener(this);
         findViewById(R.id.refresh).setOnClickListener(this);
         findViewById(R.id.photoview).setOnClickListener(this);
+        findViewById(R.id.switchview).setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +51,10 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
 
         if(v.getId() == R.id.photoview){
             RxActivityTool.skipActivity(this, PhotoViewMainActivity.class);
+        }
+
+        if(v.getId() == R.id.switchview){
+            RxActivityTool.skipActivity(this, SwitchViewActivity.class);
         }
     }
 }
