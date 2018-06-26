@@ -6,6 +6,7 @@ buildscript {
         mavenLocal()
         jcenter()
         mavenCentral()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
@@ -23,6 +24,8 @@ allprojects {
         maven { url 'http://pre.haier.com/nexus/content/repositories/qdmobile-release/' }
         maven { url "https://jitpack.io" }
         maven { url "https://maven.google.com"}
+        google()
+        mavenCentral()
 
     }
 }

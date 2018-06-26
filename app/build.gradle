@@ -23,6 +23,10 @@ android {
     dexOptions{
         jumboMode true
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -39,6 +43,9 @@ dependencies {
     compile project(':refresh')
     compile project(':photoview')
     compile project(':switchview')
+    compile project(':baseadapter')
+    compile project(':material-spinner-1.0.5')
+    compile 'com.kyleduo.switchbutton:library:2.0.0'
     compile 'cn.daily.android:viselog:0.0.1-SNAPSHOT'
 
     compile 'com.android.support:design:25.3.1'

@@ -149,6 +149,27 @@
         </activity>
         <activity android:name=".switchview.SwitchViewActivity">
         </activity>
+
+
+        <activity android:name=".baseadapter.PullToRefreshUseActivity" />
+        <activity android:name=".baseadapter.WelcomeActivity">
+        </activity>
+        <activity android:name=".baseadapter.AnimationUseActivity" />
+        <activity android:name=".baseadapter.HeaderAndFooterUseActivity" />
+        <activity android:name=".baseadapter.SectionUseActivity" />
+        <activity android:name=".baseadapter.ChooseMultipleItemUseTypeActivity" />
+        <activity android:name=".baseadapter.MultipleItemUseActivity" />
+        <activity android:name=".baseadapter.MultipleItemRvAdapterUseActivity" />
+        <activity android:name=".baseadapter.EmptyViewUseActivity" />
+        <activity android:name=".baseadapter.ItemDragAndSwipeUseActivity" />
+        <activity android:name=".baseadapter.ExpandableUseActivity" />
+        <activity android:name=".baseadapter.DataBindingUseActivity" />
+        <activity android:name=".baseadapter.ItemClickActivity"></activity>
+        <activity android:name=".baseadapter.base.BaseActivity"></activity>
+        <activity
+            android:name=".baseadapter.HomeActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".baseadapter.UpFetchUseActivity" />
     </application>
 
 </manifest>

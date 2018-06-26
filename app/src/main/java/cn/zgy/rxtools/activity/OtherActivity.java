@@ -6,6 +6,7 @@ import android.view.View;
 
 import cn.zgy.rxtool.RxActivityTool;
 import cn.zgy.rxtools.R;
+import cn.zgy.rxtools.baseadapter.HomeActivity;
 import cn.zgy.rxtools.multitype.normal.NormalActivity;
 import cn.zgy.rxtools.photoview.PhotoViewMainActivity;
 import cn.zgy.rxtools.refresh.activity.MainRefreshActivity;
@@ -30,6 +31,7 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
         findViewById(R.id.refresh).setOnClickListener(this);
         findViewById(R.id.photoview).setOnClickListener(this);
         findViewById(R.id.switchview).setOnClickListener(this);
+        findViewById(R.id.baseadapter).setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +57,10 @@ public class OtherActivity extends ActivityBase implements View.OnClickListener{
 
         if(v.getId() == R.id.switchview){
             RxActivityTool.skipActivity(this, SwitchViewActivity.class);
+        }
+
+        if(v.getId() == R.id.baseadapter){
+            RxActivityTool.skipActivity(this, HomeActivity.class);
         }
     }
 }

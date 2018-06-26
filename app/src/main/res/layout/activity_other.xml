@@ -48,4 +48,11 @@
         android:text="SwitchView"
         />
 
+    <Button
+        android:id="@+id/baseadapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BaseAdapter"
+        />
+
 </LinearLayout>

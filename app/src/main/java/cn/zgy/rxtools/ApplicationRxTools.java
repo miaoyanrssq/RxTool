@@ -14,6 +14,7 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
 
 import cn.zgy.rxtool.RxTool;
+import cn.zgy.rxtools.baseadapter.util.Utils;
 import cn.zgy.rxtools.constant.AppConstant;
 import cn.zgy.rxtools.interceptor.CustomSignInterceptor;
 import cn.zgy.rxtools.tools.SystemInfoUtils;
@@ -36,6 +37,8 @@ public class ApplicationRxTools extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         app = this;
+
+        Utils.init(this);
         RxTool.init(this);
 
         EasyHttp.init(this);
