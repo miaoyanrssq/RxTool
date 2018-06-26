@@ -1,1 +1,1 @@
-include ':app', ':rxtool', ':rxview', ':multitype', ':rxeasyhttp', ':refresh', ':photoview', ':switchview', ':baseadapter', ':material-spinner-1.0.5'
+include ':app', ':rxtool', ':rxview', ':multitype', ':rxeasyhttp', ':refresh', ':photoview', ':switchview', ':baseadapter', ':material-spinner-1.0.5','app-smartrefresh','refresh-layout','refresh-header'

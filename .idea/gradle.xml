@@ -9,11 +9,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app-smartrefresh" />
             <option value="$PROJECT_DIR$/baseadapter" />
             <option value="$PROJECT_DIR$/material-spinner-1.0.5" />
             <option value="$PROJECT_DIR$/multitype" />
             <option value="$PROJECT_DIR$/photoview" />
             <option value="$PROJECT_DIR$/refresh" />
+            <option value="$PROJECT_DIR$/refresh-header" />
+            <option value="$PROJECT_DIR$/refresh-layout" />
             <option value="$PROJECT_DIR$/rxeasyhttp" />
             <option value="$PROJECT_DIR$/rxtool" />
             <option value="$PROJECT_DIR$/rxview" />
