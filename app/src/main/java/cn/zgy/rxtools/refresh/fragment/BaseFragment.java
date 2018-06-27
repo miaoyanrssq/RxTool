@@ -32,7 +32,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        context = (Activity) getActivity();
+        context = getActivity();
     }
 
 
@@ -46,7 +46,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        context = (Activity) getActivity();
+        context = getActivity();
 
 
         if (rootView == null) {

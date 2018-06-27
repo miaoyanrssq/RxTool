@@ -108,16 +108,16 @@ public abstract class BaseRequest<R extends BaseRequest> {
         this.url = url;
         context = EasyHttp.getContext();
         EasyHttp config = EasyHttp.getInstance();
-        this.baseUrl = config.getBaseUrl();
+        this.baseUrl = EasyHttp.getBaseUrl();
         if (!TextUtils.isEmpty(this.baseUrl))
             httpUrl = HttpUrl.parse(baseUrl);
-        cacheMode = config.getCacheMode();                                //添加缓存模式
-        cacheTime = config.getCacheTime();                                //缓存时间
-        retryCount = config.getRetryCount();                              //超时重试次数
-        retryDelay = config.getRetryDelay();                              //超时重试延时
-        retryIncreaseDelay = config.getRetryIncreaseDelay();              //超时重试叠加延时
+        cacheMode = EasyHttp.getCacheMode();                                //添加缓存模式
+        cacheTime = EasyHttp.getCacheTime();                                //缓存时间
+        retryCount = EasyHttp.getRetryCount();                              //超时重试次数
+        retryDelay = EasyHttp.getRetryDelay();                              //超时重试延时
+        retryIncreaseDelay = EasyHttp.getRetryIncreaseDelay();              //超时重试叠加延时
         //Okhttp  cache
-        cache = config.getHttpCache();
+        cache = EasyHttp.getHttpCache();
         //默认添加 Accept-Language
         String acceptLanguage = HttpHeaders.getAcceptLanguage();
         if (!TextUtils.isEmpty(acceptLanguage))
@@ -361,12 +361,12 @@ public abstract class BaseRequest<R extends BaseRequest> {
         getRxCache().remove(key).compose(RxUtil.<Boolean>io_main())
                 .subscribe(new Consumer<Boolean>() {
                     @Override
-                    public void accept(@NonNull Boolean aBoolean) throws Exception {
+                    public void accept(@NonNull Boolean aBoolean) {
                         HttpLog.i("removeCache success!!!");
                     }
                 }, new Consumer<Throwable>() {
                     @Override
-                    public void accept(@NonNull Throwable throwable) throws Exception {
+                    public void accept(@NonNull Throwable throwable) {
                         HttpLog.i("removeCache err!!!"+throwable);  
                     }
                 });

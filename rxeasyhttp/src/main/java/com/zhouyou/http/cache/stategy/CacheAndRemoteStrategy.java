@@ -42,7 +42,7 @@ public final class CacheAndRemoteStrategy extends BaseStrategy {
         return Observable.concat(cache, remote)
                 .filter(new Predicate<CacheResult<T>>() {
                     @Override
-                    public boolean test(@NonNull CacheResult<T> tCacheResult) throws Exception {
+                    public boolean test(@NonNull CacheResult<T> tCacheResult) {
                         return tCacheResult != null && tCacheResult.data != null;
                     }
                 });

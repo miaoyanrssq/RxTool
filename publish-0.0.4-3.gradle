@@ -1,31 +1,31 @@
 apply plugin: 'maven'
 
-def libVersion;
-def libArtifactId;
-def libGroupId = 'cn.daily.android';
-def libDescription = 'lib';
+def libVersion
+def libArtifactId
+def libGroupId = 'cn.daily.android'
+def libDescription = 'lib'
 
 task readProperty() {
-    File file = project.file("publish.properties");
+    File file = project.file("publish.properties")
     if (!file.exists()) {
-        file.createNewFile();
-        Writer writer = file.newWriter();
-        writer.writeLine("groupId=cn.daily.android");
-        writer.writeLine("artifactId=" + project.name);
-        writer.writeLine("version=0.0.1-SNAPSHOT");
-        writer.writeLine("description=默认描述,请根据情况修改相应字段");
-        writer.close();
-        throw new FileNotFoundException("请修改" + file.getPath() + "\n中的默认信息!\n注意只提醒一次，否则使用默认!");
+        file.createNewFile()
+        Writer writer = file.newWriter()
+        writer.writeLine("groupId=cn.daily.android")
+        writer.writeLine("artifactId=" + project.name)
+        writer.writeLine("version=0.0.1-SNAPSHOT")
+        writer.writeLine("description=默认描述,请根据情况修改相应字段")
+        writer.close()
+        throw new FileNotFoundException("请修改" + file.getPath() + "\n中的默认信息!\n注意只提醒一次，否则使用默认!")
     }
 
-    Properties properties = new Properties();
-    InputStream inputStream = file.newInputStream();
-    properties.load(inputStream);
-    libVersion = properties.getProperty("version");
-    libArtifactId = properties.getProperty("artifactId");
+    Properties properties = new Properties()
+    InputStream inputStream = file.newInputStream()
+    properties.load(inputStream)
+    libVersion = properties.getProperty("version")
+    libArtifactId = properties.getProperty("artifactId")
     libGroupId = properties.getProperty("groupId")
     libDescription = properties.getProperty("description")
-    inputStream.close();
+    inputStream.close()
 }
 
 //上传AAR、source、JavaDoc脚本

@@ -36,7 +36,7 @@ public class NoStrategy implements IStrategy {
     public <T> Observable<CacheResult<T>> execute(RxCache rxCache, String cacheKey, long cacheTime, Observable<T> source, Type type) {
         return source.map(new Function<T, CacheResult<T>>() {
             @Override
-            public CacheResult<T> apply(@NonNull T t) throws Exception {
+            public CacheResult<T> apply(@NonNull T t) {
                 return new CacheResult<T>(false, t);
             }
         });

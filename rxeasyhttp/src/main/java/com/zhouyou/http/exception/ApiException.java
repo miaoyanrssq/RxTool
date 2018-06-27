@@ -82,10 +82,8 @@ public class ApiException extends Exception {
     public static boolean isOk(ApiResult apiResult) {
         if (apiResult == null)
             return false;
-        if (apiResult.isOk() /*|| ignoreSomeIssue(apiResult.getCode())*/)
-            return true;
-        else
-            return false;
+        /*|| ignoreSomeIssue(apiResult.getCode())*/
+        return apiResult.isOk();
     }
 
     public static ApiException handleException(Throwable e) {

@@ -55,9 +55,7 @@ class Checker {
         return false;
       }
 
-      if (source.length() <= (leastCompressSize << 10)) {
-        return false;
-      }
+        return source.length() > (leastCompressSize << 10);
     }
     return true;
   }

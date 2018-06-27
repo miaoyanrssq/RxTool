@@ -110,7 +110,7 @@ public class HttpLoggingInterceptor implements Interceptor {
         return logForResponse(response, tookMs);
     }
 
-    private void logForRequest(Request request, Connection connection) throws IOException {
+    private void logForRequest(Request request, Connection connection) {
         log("-------------------------------request-------------------------------");
         boolean logBody = (level == Level.BODY);
         boolean logHeaders = (level == Level.BODY || level == Level.HEADERS);
@@ -193,11 +193,10 @@ public class HttpLoggingInterceptor implements Interceptor {
         String subtype = mediaType.subtype();
         if (subtype != null) {
             subtype = subtype.toLowerCase();
-            if (subtype.contains("x-www-form-urlencoded") ||
+            return subtype.contains("x-www-form-urlencoded") ||
                     subtype.contains("json") ||
                     subtype.contains("xml") ||
-                    subtype.contains("html")) //
-                return true;
+                    subtype.contains("html");
         }
         return false;
     }

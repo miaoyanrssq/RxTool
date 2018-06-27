@@ -72,9 +72,7 @@ public abstract class BaseExpiredInterceptor implements Interceptor {
             return true;
         }
         if (mediaType.subtype() != null) {
-            if (mediaType.subtype().equals("json")) {
-                return true;
-            }
+            return mediaType.subtype().equals("json");
         }
         return false;
     }

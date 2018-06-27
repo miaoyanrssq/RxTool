@@ -161,7 +161,7 @@ public class RxDialogShopCart extends Dialog implements View.OnClickListener, Sh
     }
 
     public interface ShopCartDialogImp {
-        public void dialogDismiss();
+        void dialogDismiss();
     }
 
     public void clear() {

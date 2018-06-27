@@ -47,9 +47,9 @@ public class SwitchView extends View {
     private SlideListener listener;
 
     public interface SlideListener {
-        public void open();
+        void open();
 
-        public void close();
+        void close();
     }
 
     public SwitchView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -182,7 +182,7 @@ public class SwitchView extends View {
                 int wholeX = (int) (event.getRawX() - eventStartX);
                 frontRect_left_begin = frontRect_left;
                 boolean toRight;
-                toRight = (frontRect_left_begin > max_left / 2 ? true : false);
+                toRight = (frontRect_left_begin > max_left / 2);
                 if (Math.abs(wholeX) < 3) {
                     toRight = !toRight;
                 }

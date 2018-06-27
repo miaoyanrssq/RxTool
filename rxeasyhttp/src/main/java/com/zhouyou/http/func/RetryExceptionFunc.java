@@ -61,15 +61,15 @@ public class RetryExceptionFunc implements Function<Observable<? extends Throwab
     }
 
     @Override
-    public Observable<?> apply(@NonNull Observable<? extends Throwable> observable) throws Exception {
+    public Observable<?> apply(@NonNull Observable<? extends Throwable> observable) {
         return observable.zipWith(Observable.range(1, count + 1), new BiFunction<Throwable, Integer, Wrapper>() {
             @Override
-            public Wrapper apply(@NonNull Throwable throwable, @NonNull Integer integer) throws Exception {
+            public Wrapper apply(@NonNull Throwable throwable, @NonNull Integer integer) {
                 return new Wrapper(throwable, integer);
             }
         }).flatMap(new Function<Wrapper, ObservableSource<?>>() {
             @Override
-            public ObservableSource<?> apply(@NonNull Wrapper wrapper) throws Exception {
+            public ObservableSource<?> apply(@NonNull Wrapper wrapper) {
                 if (wrapper.index > 1)
                     HttpLog.i("重试次数：" + (wrapper.index));
                 int errCode = 0;

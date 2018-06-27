@@ -32,7 +32,7 @@ import io.reactivex.functions.Function;
  */
 public class HandleFuc<T> implements Function<ApiResult<T>, T> {
     @Override
-    public T apply(@NonNull ApiResult<T> tApiResult) throws Exception {
+    public T apply(@NonNull ApiResult<T> tApiResult) {
         if (ApiException.isOk(tApiResult)) {
             return tApiResult.getData();// == null ? Optional.ofNullable(tApiResult.getData()).orElse(null) : tApiResult.getData();
         } else {

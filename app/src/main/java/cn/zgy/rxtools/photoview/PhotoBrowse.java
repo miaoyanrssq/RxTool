@@ -103,7 +103,7 @@ public class PhotoBrowse extends Activity {
                 mPhotoView.setImageResource(imgs[position]);
                 mBg.startAnimation(in);
                 mBg.setVisibility(View.VISIBLE);
-                mParent.setVisibility(View.VISIBLE);;
+                mParent.setVisibility(View.VISIBLE);
                 mPhotoView.animaFrom(mInfo);
             }
         });

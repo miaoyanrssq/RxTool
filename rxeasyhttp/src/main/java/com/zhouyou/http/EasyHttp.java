@@ -600,12 +600,12 @@ public final class EasyHttp {
         getRxCache().clear().compose(RxUtil.<Boolean>io_main())
                 .subscribe(new Consumer<Boolean>() {
                     @Override
-                    public void accept(@NonNull Boolean aBoolean) throws Exception {
+                    public void accept(@NonNull Boolean aBoolean) {
                         HttpLog.i("clearCache success!!!");
                     }
                 }, new Consumer<Throwable>() {
                     @Override
-                    public void accept(@NonNull Throwable throwable) throws Exception {
+                    public void accept(@NonNull Throwable throwable) {
                         HttpLog.i("clearCache err!!!");
                     }
                 });
@@ -617,12 +617,12 @@ public final class EasyHttp {
     public static void removeCache(String key) {
         getRxCache().remove(key).compose(RxUtil.<Boolean>io_main()).subscribe(new Consumer<Boolean>() {
             @Override
-            public void accept(@NonNull Boolean aBoolean) throws Exception {
+            public void accept(@NonNull Boolean aBoolean) {
                 HttpLog.i("removeCache success!!!");
             }
         }, new Consumer<Throwable>() {
             @Override
-            public void accept(@NonNull Throwable throwable) throws Exception {
+            public void accept(@NonNull Throwable throwable) {
                     HttpLog.i("removeCache err!!!");
             }
         });

@@ -35,7 +35,7 @@ public class SectionAdapter extends BaseSectionQuickAdapter<MySection, BaseViewH
 
     @Override
     protected void convert(BaseViewHolder helper, MySection item) {
-        Video video = (Video) item.t;
+        Video video = item.t;
         switch (helper.getLayoutPosition() %
                 2) {
             case 0:

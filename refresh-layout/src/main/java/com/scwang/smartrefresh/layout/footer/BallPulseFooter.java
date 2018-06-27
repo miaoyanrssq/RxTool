@@ -50,7 +50,7 @@ public class BallPulseFooter extends InternalAbstract implements RefreshFooter {
 
     protected boolean mIsStarted = false;
     protected ArrayList<ValueAnimator> mAnimators;
-    protected Map<ValueAnimator, ValueAnimator.AnimatorUpdateListener> mUpdateListeners = new HashMap<>();;
+    protected Map<ValueAnimator, ValueAnimator.AnimatorUpdateListener> mUpdateListeners = new HashMap<>();
     //</editor-fold>
 
     //<editor-fold desc="构造方法">

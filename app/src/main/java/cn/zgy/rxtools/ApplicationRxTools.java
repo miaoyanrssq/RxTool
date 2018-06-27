@@ -83,9 +83,7 @@ public class ApplicationRxTools extends MultiDexApplication {
         @Override
         public boolean verify(String hostname, SSLSession session) {
             HttpLog.i("############### verify " + hostname + " " + this.host);
-            if (this.host == null || "".equals(this.host) || !this.host.contains(hostname))
-                return false;
-            return true;
+            return this.host != null && !"".equals(this.host) && this.host.contains(hostname);
         }
     }
 

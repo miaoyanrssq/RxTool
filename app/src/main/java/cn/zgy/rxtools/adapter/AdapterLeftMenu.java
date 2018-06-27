@@ -27,7 +27,7 @@ public class AdapterLeftMenu extends RecyclerView.Adapter {
     private List<onItemSelectedListener> mSelectedListenerList;
 
     public interface onItemSelectedListener{
-        public void onLeftItemSelected(int postion, ModelDishMenu menu);
+        void onLeftItemSelected(int postion, ModelDishMenu menu);
     }
 
     public void addItemSelectedListener(onItemSelectedListener listener){

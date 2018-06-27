@@ -47,9 +47,9 @@ public class AnimationAdapter extends BaseQuickAdapter<Status, BaseViewHolder> {
         String msg = "\"He was one of Australia's most of distinguished artistes, renowned for his portraits\"";
         ((TextView) helper.getView(R.id.tweetText)).setText(SpannableStringUtils.getBuilder(msg).append("landscapes and nedes").setClickSpan(clickableSpan).create());
         ((TextView) helper.getView(R.id.tweetText)).setMovementMethod(ClickableMovementMethod.getInstance());
-        ((TextView) helper.getView(R.id.tweetText)).setFocusable(false);
-        ((TextView) helper.getView(R.id.tweetText)).setClickable(false);
-        ((TextView) helper.getView(R.id.tweetText)).setLongClickable(false);
+        helper.getView(R.id.tweetText).setFocusable(false);
+        helper.getView(R.id.tweetText).setClickable(false);
+        helper.getView(R.id.tweetText).setLongClickable(false);
     }
 
     ClickableSpan clickableSpan = new ClickableSpan() {

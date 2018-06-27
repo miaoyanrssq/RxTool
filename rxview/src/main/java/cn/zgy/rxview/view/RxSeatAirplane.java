@@ -683,7 +683,7 @@ public class RxSeatAirplane extends View {
         int column = 7;
         mSeats.clear();
 
-        float seatWH = (float) (rectFCabin.width() / 9.0f);
+        float seatWH = rectFCabin.width() / 9.0f;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 if (i >= 0 && j < 2) {
@@ -772,7 +772,7 @@ public class RxSeatAirplane extends View {
         int row = 3;
         int column = 8;
 
-        float seatWH2 = (float) (rectFCabin.width() / 10.0f);
+        float seatWH2 = rectFCabin.width() / 10.0f;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 if (i >= 0 && j < 2) {
@@ -811,7 +811,7 @@ public class RxSeatAirplane extends View {
                 + seatWH * 13
                 + rectFCabin.width() / 2 +
                 seatWH + (row + 1) * (seatWH2) + seatWH2 / 2
-                + ((int) (dip2px(2) * mAnimatedValue < 1 ? 1 : (int) (dip2px(2) * mAnimatedValue)));
+                + (dip2px(2) * mAnimatedValue < 1 ? 1 : (int) (dip2px(2) * mAnimatedValue));
         canvas.drawRoundRect(rectFWall, dip2px(1), dip2px(1), mPaintOther);
         rectFWall.top = rectFCabin.top
                 + seatWH * 13
@@ -825,7 +825,7 @@ public class RxSeatAirplane extends View {
                 + seatWH * 13
                 + rectFCabin.width() / 2 +
                 seatWH + (row + 1) * (seatWH2) + seatWH2 / 2
-                + ((int) (dip2px(2) * mAnimatedValue < 1 ? 1 : (int) (dip2px(2) * mAnimatedValue)));
+                + (dip2px(2) * mAnimatedValue < 1 ? 1 : (int) (dip2px(2) * mAnimatedValue));
         canvas.drawRoundRect(rectFWall, dip2px(1), dip2px(1), mPaintOther);
 
     }

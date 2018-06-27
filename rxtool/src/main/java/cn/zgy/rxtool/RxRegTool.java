@@ -165,7 +165,7 @@ public class RxRegTool {
      * @throws ParseException
      */
     @SuppressWarnings("unchecked")
-    public static String IDCardValidate(String IDStr) throws ParseException {
+    public static String IDCardValidate(String IDStr) {
         String errorInfo = "";// 记录错误信息
         String[] ValCodeArr = {"1", "0", "x", "9", "8", "7", "6", "5", "4",
                 "3", "2"};

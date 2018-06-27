@@ -129,7 +129,7 @@ public final class RxCache {
 
     private static abstract class SimpleSubscribe<T> implements ObservableOnSubscribe<T> {
         @Override
-        public void subscribe(@NonNull ObservableEmitter<T> subscriber) throws Exception {
+        public void subscribe(@NonNull ObservableEmitter<T> subscriber) {
             try {
                 T data = execute();
                 if (!subscriber.isDisposed()) {
@@ -187,7 +187,7 @@ public final class RxCache {
     public <T> Observable<Boolean> save(final String key, final T value) {
         return Observable.create(new SimpleSubscribe<Boolean>() {
             @Override
-            Boolean execute() throws Throwable {
+            Boolean execute() {
                 cacheCore.save(key, value);
                 return true;
             }
@@ -200,7 +200,7 @@ public final class RxCache {
     public Observable<Boolean> containsKey(final String key) {
         return Observable.create(new SimpleSubscribe<Boolean>() {
             @Override
-            Boolean execute() throws Throwable {
+            Boolean execute() {
                 return cacheCore.containsKey(key);
             }
         });
@@ -212,7 +212,7 @@ public final class RxCache {
     public Observable<Boolean> remove(final String key) {
         return Observable.create(new SimpleSubscribe<Boolean>() {
             @Override
-            Boolean execute() throws Throwable {
+            Boolean execute() {
                 return cacheCore.remove(key);
             }
         });
@@ -224,7 +224,7 @@ public final class RxCache {
     public Observable<Boolean> clear() {
         return Observable.create(new SimpleSubscribe<Boolean>() {
             @Override
-            Boolean execute() throws Throwable {
+            Boolean execute() {
                 return cacheCore.clear();
             }
         });

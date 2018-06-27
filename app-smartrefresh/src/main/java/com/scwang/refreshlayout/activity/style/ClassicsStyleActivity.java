@@ -125,7 +125,7 @@ public class ClassicsStyleActivity extends AppCompatActivity implements AdapterV
                 if (Build.VERSION.SDK_INT >= 21) {
                     mDrawableProgress.setTint(0xffffffff);
                 } else if (mDrawableProgress instanceof VectorDrawableCompat) {
-                    ((VectorDrawableCompat) mDrawableProgress).setTint(0xffffffff);
+                    mDrawableProgress.setTint(0xffffffff);
                 }
                 /*
                  * 由于是后面才设置，需要手动更改视图的位置
@@ -152,7 +152,7 @@ public class ClassicsStyleActivity extends AppCompatActivity implements AdapterV
                 if (Build.VERSION.SDK_INT >= 21) {
                     mDrawableProgress.setTint(0xff666666);
                 } else if (mDrawableProgress instanceof VectorDrawableCompat) {
-                    ((VectorDrawableCompat) mDrawableProgress).setTint(0xff666666);
+                    mDrawableProgress.setTint(0xff666666);
                 }
                 break;
             case 蓝色主题:
@@ -181,7 +181,7 @@ public class ClassicsStyleActivity extends AppCompatActivity implements AdapterV
             getWindow().setStatusBarColor(ContextCompat.getColor(this, colorPrimaryDark));
             mDrawableProgress.setTint(0xffffffff);
         } else if (mDrawableProgress instanceof VectorDrawableCompat) {
-            ((VectorDrawableCompat) mDrawableProgress).setTint(0xffffffff);
+            mDrawableProgress.setTint(0xffffffff);
         }
     }
 

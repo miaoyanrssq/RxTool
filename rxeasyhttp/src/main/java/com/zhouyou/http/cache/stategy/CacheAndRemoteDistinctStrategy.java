@@ -43,12 +43,12 @@ public final class CacheAndRemoteDistinctStrategy extends BaseStrategy {
         return Observable.concat(cache, remote)
                 .filter(new Predicate<CacheResult<T>>() {
                     @Override
-                    public boolean test(@NonNull CacheResult<T> tCacheResult) throws Exception {
+                    public boolean test(@NonNull CacheResult<T> tCacheResult) {
                         return tCacheResult != null && tCacheResult.data != null;
                     }
                 }).distinctUntilChanged(new Function<CacheResult<T>, String>() {
                     @Override
-                    public String apply(@NonNull CacheResult<T> tCacheResult) throws Exception {
+                    public String apply(@NonNull CacheResult<T> tCacheResult) {
                         return  ByteString.of(tCacheResult.data.toString().getBytes()).md5().hex();
                     }
                 });

@@ -31,7 +31,7 @@ import io.reactivex.functions.Function;
  */
 public class HttpResponseFunc<T> implements Function<Throwable, Observable<T>> {
     @Override
-    public Observable<T> apply(@NonNull Throwable throwable) throws Exception {
+    public Observable<T> apply(@NonNull Throwable throwable) {
         return Observable.error(ApiException.handleException(throwable));
     }
 }
