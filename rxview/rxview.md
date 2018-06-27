@@ -45,3 +45,4 @@
 * 水波纹
 * app检测更新与安装
 * pull解析XML
+* RxToast自定义Toast
