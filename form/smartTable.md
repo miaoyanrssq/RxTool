@@ -61,30 +61,6 @@
 
 ![表单功能](/img/1.png)
 
-##### 如何使用
-
-- 引用
-
->   添加 JitPack repository 到你的build文件
-
-```gradle
-allprojects {
-		repositories {
-			...
-			maven { url 'https://www.jitpack.io' }
-		}
-	}
-```
-
-> 增加依赖
-
-```gradle
-dependencies {
-	        compile 'com.github.huangyanbin:SmartTable:2.2.0'
-	}
-```
-     如果你不需要数组转列功能，你可以使用1.7.1版本，需要的话，请使用最新版本2.2.0
-     2.0格式化配置有所变化，文档还没写，如果要需求，可以在QQ群询问。
 
 >  使用表格View
 
