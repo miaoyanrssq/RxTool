@@ -443,4 +443,10 @@ public class WheelOptions<T> {
     public void setLinkage(boolean linkage) {
         this.linkage = linkage;
     }
+
+    public void isNumberFormat(boolean isFormat){
+        wv_option1.setNumberFormat(isFormat);
+        wv_option2.setNumberFormat(isFormat);
+        wv_option3.setNumberFormat(isFormat);
+    }
 }

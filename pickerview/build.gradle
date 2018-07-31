@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply from: '../publish-0.0.4-3.gradle'
 
 
 
@@ -43,5 +44,6 @@ allprojects {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(path: ':wheelview')
+//    compile project(path: ':wheelview')
+    compile 'cn.daily.android:wheelview:0.0.2-SNAPSHOT'
 }

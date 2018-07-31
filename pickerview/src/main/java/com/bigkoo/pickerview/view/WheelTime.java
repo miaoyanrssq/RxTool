@@ -57,6 +57,7 @@ public class WheelTime {
     private boolean isLunarCalendar = false;
     private ISelectTimeCallback mSelectChangeCallback;
 
+
     public WheelTime(View view, boolean[] type, int gravity, int textSize) {
         super();
         this.view = view;
@@ -928,5 +929,15 @@ public class WheelTime {
 
     public void setSelectChangeCallback(ISelectTimeCallback mSelectChangeCallback) {
         this.mSelectChangeCallback = mSelectChangeCallback;
+    }
+
+
+    public void isNumberFormat(boolean isFormat){
+        wv_year.setNumberFormat(isFormat);
+        wv_month.setNumberFormat(isFormat);
+        wv_day.setNumberFormat(isFormat);
+        wv_hours.setNumberFormat(isFormat);
+        wv_minutes.setNumberFormat(isFormat);
+        wv_seconds.setNumberFormat(isFormat);
     }
 }

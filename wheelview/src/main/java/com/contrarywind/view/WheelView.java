@@ -125,6 +125,11 @@ public class WheelView extends View {
 
     private final float DEFAULT_TEXT_TARGET_SKEWX = 0.5f;
 
+    //true:Integer型数据如果小于2位，前面自动补0，false：不补0
+    private boolean isNumberFormat = false;
+
+
+
     public WheelView(Context context) {
         this(context, null);
     }
@@ -574,8 +579,12 @@ public class WheelView extends View {
         } else if (item instanceof IPickerViewData) {
             return ((IPickerViewData) item).getPickerViewText();
         } else if (item instanceof Integer) {
+            if(isNumberFormat()){
             //如果为整形则最少保留两位数.
             return String.format(Locale.getDefault(), "%02d", (int) item);
+            }else{
+                return String.format(Locale.getDefault(), "%d", (int) item);
+            }
         }
         return item.toString();
     }
@@ -786,6 +795,14 @@ public class WheelView extends View {
             this.lineSpacingMultiplier = lineSpacingMultiplier;
             judgeLineSpace();
         }
+    }
+
+    public boolean isNumberFormat() {
+        return isNumberFormat;
+    }
+
+    public void setNumberFormat(boolean numberFormat) {
+        isNumberFormat = numberFormat;
     }
 
     public boolean isLoop() {

@@ -111,5 +111,7 @@ public class PickerOptions {
     public Typeface font = Typeface.MONOSPACE;//字体样式
     public WheelView.DividerType dividerType = WheelView.DividerType.FILL;//分隔线类型
 
+    public boolean isNumberFormat = false;//对于小于两位的整型数字是否做前面补0处理，默认不补0
+
 
 }

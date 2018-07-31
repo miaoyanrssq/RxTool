@@ -243,6 +243,16 @@ public class OptionsPickerBuilder {
         return this;
     }
 
+    /**
+     * 对于小于两位的整型数字是否做前面补0处理，默认不补0
+     * @param isFormat
+     * @return
+     */
+    public OptionsPickerBuilder isNumberFormat(boolean isFormat){
+        mPickerOptions.isNumberFormat = isFormat;
+        return this;
+    }
+
 
     public <T> OptionsPickerView<T> build() {
         return new OptionsPickerView<>(mPickerOptions);
