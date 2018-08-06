@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -95,8 +96,12 @@ public class TestFragment extends Fragment implements View.OnClickListener {
                 .setDecorView(mFrameLayout)//非dialog模式下,设置ViewGroup, pickerView将会添加到这个ViewGroup中
                 .setBackgroundId(0x00000000)
                 .setOutSideCancelable(false)
+                .setTextColorCenter(0xffffff)
+                .setTextColorOut(0xffffff)
                 .isNumberFormat(true)
                 .build();
+
+        Log.e("color", "color===" + 0xffffff);
 
         pvTime.setKeyBackCancelable(false);//系统返回键监听屏蔽掉
     }

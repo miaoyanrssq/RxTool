@@ -512,7 +512,6 @@ public class WheelView extends View {
 
                     //设置选中项
                     selectedItem = preCurrentIndex - (itemsVisible / 2 - counter);
-
                 } else {
                     // 其他条目
                     canvas.save();

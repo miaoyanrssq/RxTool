@@ -246,3 +246,7 @@ WheelView wheelView = findViewById(R.id.wheelview);
 ### 效果图（招行信用卡的“掌上生活”里面条件选择器他们用的就是我这个库，大家可以当实际项目参考）
 ![](https://github.com/saiwu-bigkoo/Android-PickerView/blob/master/preview/pickerdemo_zhangshangshenghuo.gif)
 
+
+# 注意事项
+
+设置颜色的时候请添加透明度，如0xffffffff,不能是0xffffff,否则会被自动设置为透明度为00
