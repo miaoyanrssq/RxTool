@@ -54,6 +54,8 @@ public class WheelTime {
 
     private float lineSpacingMultiplier;
     private WheelView.DividerType dividerType;
+    private WheelView.DividerNum dividerNum;
+    private int dividerWidth;
     private boolean isLunarCalendar = false;
     private ISelectTimeCallback mSelectChangeCallback;
 
@@ -640,6 +642,24 @@ public class WheelTime {
 
     }
 
+    private void setDividerNum(){
+        wv_day.setDividerNum(dividerNum);
+        wv_month.setDividerNum(dividerNum);
+        wv_year.setDividerNum(dividerNum);
+        wv_hours.setDividerNum(dividerNum);
+        wv_minutes.setDividerNum(dividerNum);
+        wv_seconds.setDividerNum(dividerNum);
+    }
+
+    private void setDividerWidth(){
+        wv_day.setDividerWidth(dividerWidth);
+        wv_month.setDividerWidth(dividerWidth);
+        wv_year.setDividerWidth(dividerWidth);
+        wv_hours.setDividerWidth(dividerWidth);
+        wv_minutes.setDividerWidth(dividerWidth);
+        wv_seconds.setDividerWidth(dividerWidth);
+    }
+
     private void setLineSpacingMultiplier() {
         wv_day.setLineSpacingMultiplier(lineSpacingMultiplier);
         wv_month.setLineSpacingMultiplier(lineSpacingMultiplier);
@@ -893,6 +913,24 @@ public class WheelTime {
     public void setDividerType(WheelView.DividerType dividerType) {
         this.dividerType = dividerType;
         setDividerType();
+    }
+
+    /**
+     * 设置分割线数量 0，1，2
+     * @param dividerNum
+     */
+    public void setDividerNum(WheelView.DividerNum dividerNum) {
+        this.dividerNum = dividerNum;
+        setDividerNum();
+    }
+
+    /**
+     * 设置分割线宽度
+     * @param dividerWidth
+     */
+    public void setDividerWidth(int dividerWidth) {
+        this.dividerWidth = dividerWidth;
+        setDividerWidth();
     }
 
     /**

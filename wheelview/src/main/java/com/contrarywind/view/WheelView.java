@@ -46,6 +46,15 @@ public class WheelView extends View {
 
     private DividerType dividerType;//分隔线类型
 
+    public enum DividerNum{
+        NONE,
+        ONE,
+        TWO
+    }
+
+    private DividerNum dividerNum;//分割线数量
+    private int dividerWidth;//分割线宽度
+
     private Context context;
     private Handler handler;
     private GestureDetector gestureDetector;
@@ -431,11 +440,26 @@ public class WheelView extends View {
                 startX = 10;
             }
             endX = measuredWidth - startX;
-            canvas.drawLine(startX, firstLineY, endX, firstLineY, paintIndicator);
-            canvas.drawLine(startX, secondLineY, endX, secondLineY, paintIndicator);
+            if(dividerNum == DividerNum.NONE){
+
+            }else if(dividerNum == DividerNum.ONE){
+                canvas.drawLine(startX, secondLineY, endX, secondLineY, paintIndicator);
+            }
+            else {
+                canvas.drawLine(startX, firstLineY, endX, firstLineY, paintIndicator);
+                canvas.drawLine(startX, secondLineY, endX, secondLineY, paintIndicator);
+            }
         } else {
-            canvas.drawLine(0.0F, firstLineY, measuredWidth, firstLineY, paintIndicator);
-            canvas.drawLine(0.0F, secondLineY, measuredWidth, secondLineY, paintIndicator);
+            if(dividerNum == DividerNum.NONE){
+
+            }else if(dividerNum == DividerNum.ONE){
+                canvas.drawLine(0.0F, secondLineY, measuredWidth, secondLineY, paintIndicator);
+            }
+            else {
+                canvas.drawLine(0.0F, firstLineY, measuredWidth, firstLineY, paintIndicator);
+                canvas.drawLine(0.0F, secondLineY, measuredWidth, secondLineY, paintIndicator);
+            }
+
         }
 
         //只显示选中项Label文字的模式，并且Label文字不为空，则进行绘制
@@ -787,6 +811,15 @@ public class WheelView extends View {
 
     public void setDividerType(DividerType dividerType) {
         this.dividerType = dividerType;
+    }
+
+    public void setDividerNum(DividerNum dividerNum) {
+        this.dividerNum = dividerNum;
+    }
+
+    public void setDividerWidth(int dividerWidth) {
+        this.dividerWidth = dividerWidth;
+        paintIndicator.setStrokeWidth(dividerWidth);
     }
 
     public void setLineSpacingMultiplier(float lineSpacingMultiplier) {

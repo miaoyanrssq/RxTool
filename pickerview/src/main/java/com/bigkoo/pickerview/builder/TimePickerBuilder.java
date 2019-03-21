@@ -179,6 +179,24 @@ public class TimePickerBuilder {
     }
 
     /**
+     * 设置分割线数量 0，1，2
+     * @param dividerNum
+     */
+    public TimePickerBuilder setDividerNum(WheelView.DividerNum dividerNum) {
+        mPickerOptions.dividerNum = dividerNum;
+        return this;
+    }
+
+    /**
+     * 设置分割线宽度
+     * @param dividerWidth
+     */
+    public TimePickerBuilder setDividerWidth(int dividerWidth) {
+        mPickerOptions.dividerWidth = dividerWidth;
+        return this;
+    }
+
+    /**
      * //显示时的外部背景色颜色,默认是灰色
      *
      * @param backgroundId

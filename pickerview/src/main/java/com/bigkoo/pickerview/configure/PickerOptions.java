@@ -110,6 +110,8 @@ public class PickerOptions {
     public boolean isCenterLabel = false;//是否只显示中间的label,默认每个item都显示
     public Typeface font = Typeface.MONOSPACE;//字体样式
     public WheelView.DividerType dividerType = WheelView.DividerType.FILL;//分隔线类型
+    public WheelView.DividerNum dividerNum = WheelView.DividerNum.TWO;
+    public int dividerWidth = 2;
 
     public boolean isNumberFormat = false;//对于小于两位的整型数字是否做前面补0处理，默认不补0
 

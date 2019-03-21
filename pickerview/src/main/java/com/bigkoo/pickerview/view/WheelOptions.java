@@ -34,6 +34,8 @@ public class WheelOptions<T> {
     private int dividerColor;
 
     private WheelView.DividerType dividerType;
+    private WheelView.DividerNum dividerNum;
+    private int dividerWidth;
 
     // 条目间距倍数
     private float lineSpacingMultiplier;
@@ -256,6 +258,18 @@ public class WheelOptions<T> {
         wv_option3.setDividerType(dividerType);
     }
 
+    private void setDividerNum(){
+        wv_option1.setDividerNum(dividerNum);
+        wv_option2.setDividerNum(dividerNum);
+        wv_option3.setDividerNum(dividerNum);
+    }
+
+    private void setDividerWidth(){
+        wv_option1.setDividerWidth(dividerWidth);
+        wv_option2.setDividerWidth(dividerWidth);
+        wv_option3.setDividerWidth(dividerWidth);
+    }
+
     private void setLineSpacingMultiplier() {
         wv_option1.setLineSpacingMultiplier(lineSpacingMultiplier);
         wv_option2.setLineSpacingMultiplier(lineSpacingMultiplier);
@@ -412,6 +426,24 @@ public class WheelOptions<T> {
     public void setTextColorCenter(int textColorCenter) {
         this.textColorCenter = textColorCenter;
         setTextColorCenter();
+    }
+
+    /**
+     * 设置分割线数量 0，1，2
+     * @param dividerNum
+     */
+    public void setDividerNum(WheelView.DividerNum dividerNum) {
+        this.dividerNum = dividerNum;
+        setDividerNum();
+    }
+
+    /**
+     * 设置分割线宽度
+     * @param dividerWidth
+     */
+    public void setDividerWidth(int dividerWidth) {
+        this.dividerWidth = dividerWidth;
+        setDividerWidth();
     }
 
     /**

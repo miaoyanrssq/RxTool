@@ -162,6 +162,24 @@ public class OptionsPickerBuilder {
     }
 
     /**
+     * 设置分割线数量 0，1，2
+     * @param dividerNum
+     */
+    public OptionsPickerBuilder setDividerNum(WheelView.DividerNum dividerNum) {
+        mPickerOptions.dividerNum = dividerNum;
+        return this;
+    }
+
+    /**
+     * 设置分割线宽度
+     * @param dividerWidth
+     */
+    public OptionsPickerBuilder setDividerWidth(int dividerWidth) {
+        mPickerOptions.dividerWidth = dividerWidth;
+        return this;
+    }
+
+    /**
      * Set the textColor of selected item.
      *
      * @param textColorCenter color res.

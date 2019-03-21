@@ -30,6 +30,7 @@ import com.bigkoo.pickerview.listener.CustomListener;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
 import com.bigkoo.pickerviewdemo.bean.CardBean;
 import com.bigkoo.pickerviewdemo.bean.ProvinceBean;
+import com.contrarywind.view.WheelView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -206,6 +207,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 })
                 .setType(new boolean[]{true, true, true, true, true, true})
                 .isDialog(true)
+                .setDividerColor(Color.BLUE)
+                .setDividerType(WheelView.DividerType.WRAP)
+                .setDividerNum(WheelView.DividerNum.ONE)
+                .setDividerWidth(5)
                 .build();
 
         Dialog mDialog = pvTime.getDialog();
