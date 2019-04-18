@@ -171,6 +171,16 @@ public class OptionsPickerBuilder {
     }
 
     /**
+     * 设置可见行数
+     * @param num
+     * @return
+     */
+    public OptionsPickerBuilder setItemVisibleCount(int num){
+        mPickerOptions.itemVisibleCount = num;
+        return this;
+    }
+
+    /**
      * 设置分割线宽度
      * @param dividerWidth
      */

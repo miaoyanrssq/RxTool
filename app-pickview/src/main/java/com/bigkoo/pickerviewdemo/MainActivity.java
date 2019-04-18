@@ -206,11 +206,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 })
                 .setType(new boolean[]{true, true, true, true, true, true})
+                .setLabel("","", "","秒", "秒", "秒")
                 .isDialog(true)
                 .setDividerColor(Color.BLUE)
                 .setDividerType(WheelView.DividerType.WRAP)
                 .setDividerNum(WheelView.DividerNum.ONE)
                 .setDividerWidth(5)
+                .setItemVisibleCount(5)
                 .build();
 
         Dialog mDialog = pvTime.getDialog();

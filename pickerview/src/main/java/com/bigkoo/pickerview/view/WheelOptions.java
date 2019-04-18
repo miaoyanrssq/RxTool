@@ -37,6 +37,8 @@ public class WheelOptions<T> {
     private WheelView.DividerNum dividerNum;
     private int dividerWidth;
 
+    private int itemsVisible;
+
     // 条目间距倍数
     private float lineSpacingMultiplier;
 
@@ -264,6 +266,12 @@ public class WheelOptions<T> {
         wv_option3.setDividerNum(dividerNum);
     }
 
+    private void setItemsVisibleCount(){
+        wv_option1.setItemsVisibleCount(itemsVisible);
+        wv_option2.setItemsVisibleCount(itemsVisible);
+        wv_option3.setItemsVisibleCount(itemsVisible);
+    }
+
     private void setDividerWidth(){
         wv_option1.setDividerWidth(dividerWidth);
         wv_option2.setDividerWidth(dividerWidth);
@@ -435,6 +443,14 @@ public class WheelOptions<T> {
     public void setDividerNum(WheelView.DividerNum dividerNum) {
         this.dividerNum = dividerNum;
         setDividerNum();
+    }
+    /**
+     * 设置可见行数
+     * @param num
+     */
+    public void setItemsVisibleCount(int num){
+        this.itemsVisible = num;
+        setItemsVisibleCount();
     }
 
     /**

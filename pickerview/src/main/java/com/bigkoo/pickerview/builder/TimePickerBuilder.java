@@ -179,6 +179,16 @@ public class TimePickerBuilder {
     }
 
     /**
+     * 设置可见行数
+     * @param num
+     * @return
+     */
+    public TimePickerBuilder setItemVisibleCount(int num){
+        mPickerOptions.itemVisibleCount = num;
+        return this;
+    }
+
+    /**
      * 设置分割线数量 0，1，2
      * @param dividerNum
      */

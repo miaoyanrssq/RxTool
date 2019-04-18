@@ -817,6 +817,10 @@ public class WheelView extends View {
         this.dividerNum = dividerNum;
     }
 
+    public void setItemsVisibleCount(int num){
+        this.itemsVisible = num + 2;
+    }
+
     public void setDividerWidth(int dividerWidth) {
         this.dividerWidth = dividerWidth;
         paintIndicator.setStrokeWidth(dividerWidth);

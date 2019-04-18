@@ -56,6 +56,7 @@ public class WheelTime {
     private WheelView.DividerType dividerType;
     private WheelView.DividerNum dividerNum;
     private int dividerWidth;
+    private int itemsVisible;
     private boolean isLunarCalendar = false;
     private ISelectTimeCallback mSelectChangeCallback;
 
@@ -651,6 +652,15 @@ public class WheelTime {
         wv_seconds.setDividerNum(dividerNum);
     }
 
+    private void setItemsVisibleCount(){
+        wv_day.setItemsVisibleCount(itemsVisible);
+        wv_month.setItemsVisibleCount(itemsVisible);
+        wv_year.setItemsVisibleCount(itemsVisible);
+        wv_hours.setItemsVisibleCount(itemsVisible);
+        wv_minutes.setItemsVisibleCount(itemsVisible);
+        wv_seconds.setItemsVisibleCount(itemsVisible);
+    }
+
     private void setDividerWidth(){
         wv_day.setDividerWidth(dividerWidth);
         wv_month.setDividerWidth(dividerWidth);
@@ -922,6 +932,15 @@ public class WheelTime {
     public void setDividerNum(WheelView.DividerNum dividerNum) {
         this.dividerNum = dividerNum;
         setDividerNum();
+    }
+
+    /**
+     * 设置可见行数
+     * @param num
+     */
+    public void setItemsVisibleCount(int num){
+        this.itemsVisible = num;
+        setItemsVisibleCount();
     }
 
     /**
