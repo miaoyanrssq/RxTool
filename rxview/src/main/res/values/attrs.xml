@@ -288,6 +288,7 @@
         <attr name="spiderColor" format="color"/>
         <attr name="spiderRadiusColor" format="color"/>
         <attr name="spiderLevelColor" format="color"/>
+        <attr name="spiderLevelColor2" format="color"/>
         <attr name="spiderLevelStroke" format="boolean"/>
         <attr name="spiderRotate" format="boolean"/>
         <attr name="spiderLevelStrokeWidth" format="float"/>

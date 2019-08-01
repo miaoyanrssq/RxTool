@@ -97,10 +97,13 @@ public class ActivityCobweb extends ActivityBase implements SeekBar.OnSeekBarCha
             case R.id.seekbar_spider_number:
                 int number = progress + 1;
                 List<ModelSpider> modelSpiders = new ArrayList<>();
+                List<ModelSpider> modelSpiders2 = new ArrayList<>();
                 for (int i = 0; i < number; i++) {
                     modelSpiders.add(new ModelSpider(nameStrs[i], 1 + new Random().nextInt(mCobwebView.getSpiderMaxLevel())));
+                    modelSpiders2.add(new ModelSpider(nameStrs[i], 1 + new Random().nextInt(mCobwebView.getSpiderMaxLevel())));
                 }
                 mCobwebView.setSpiderList(modelSpiders);
+                mCobwebView.setSpiderList2(modelSpiders2);
                 break;
                 default:
                     break;

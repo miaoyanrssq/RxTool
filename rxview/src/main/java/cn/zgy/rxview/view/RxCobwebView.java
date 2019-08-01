@@ -38,6 +38,7 @@ public class RxCobwebView extends View {
 
     private String[] mSpiderNames;
     private float[] mSpiderLevels;  // 等级列表
+    private float[] mSpiderLevels2;  // 等级列表
 
     private Paint rank_Paint;//各等级进度画笔
     private Paint mSpiderNamePaint;//字体画笔
@@ -47,12 +48,18 @@ public class RxCobwebView extends View {
     private int mSpiderNumber;//蜘蛛数量
 
     private List<ModelSpider> mSpiderList = new ArrayList<>();
+    private List<ModelSpider> mSpiderList2 = new ArrayList<>();
 
     private int mSpiderColor;//蛛网内部填充颜色
     private int mSpiderRadiusColor;//蛛网半径颜色
 
     private int mSpiderLevelColor; // 蛛网等级填充的颜色
     private int mSpiderLevelStrokeColor; // 蛛网等级描边的颜色
+
+    private int mSpiderLevelColor2; // 蛛网等级填充的颜色
+    private int mSpiderLevelStrokeColor2; // 蛛网等级描边的颜色
+
+
     private boolean mSpiderLevelStroke; // 是否使用蛛网等级的描边
     private float mSpiderLevelStrokeWidth; // 蛛网等级描边的宽度
     private boolean mSpiderRotate;//是否支持手势旋转
@@ -92,10 +99,13 @@ public class RxCobwebView extends View {
         defalutSize = RxImageTool.dp2px(defalutSize);
 
         mSpiderNames = new String[]{"金钱", "能力", "美貌", "智慧", "交际", "口才"};
-        mSpiderLevels = new float[]{1, 1, 1, 1, 1, 1};
+        mSpiderLevels = new float[]{1, 4, 1, 2, 4, 1};
+        mSpiderLevels2 = new float[]{1, 2, 3, 4, 1.5f, 2.1f};
         mSpiderList.clear();
+        mSpiderList2.clear();
         for (int position = 0; position < mSpiderNames.length; position++) {
             mSpiderList.add(new ModelSpider(mSpiderNames[position], mSpiderLevels[position]));
+            mSpiderList2.add(new ModelSpider(mSpiderNames[position], mSpiderLevels2[position]));
         }
         mSpiderNumber = mSpiderList.size();
 
@@ -167,11 +177,13 @@ public class RxCobwebView extends View {
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.RxCobwebView);//获得这个控件对应的属性。
         mSpiderColor = a.getColor(R.styleable.RxCobwebView_spiderColor, getResources().getColor(R.color.teal));//蛛网内部颜色
         mSpiderRadiusColor = a.getColor(R.styleable.RxCobwebView_spiderRadiusColor, Color.WHITE);//蛛网半径颜色
-        mSpiderLevelStrokeColor = a.getColor(R.styleable.RxCobwebView_spiderLevelColor, getResources().getColor(R.color.custom_progress_orange_progress));//蛛网等级描边颜色
-        mSpiderLevelColor = RxImageTool.changeColorAlpha(mSpiderLevelStrokeColor, (255 / 2));//蛛网等级颜色
+        mSpiderLevelStrokeColor = a.getColor(R.styleable.RxCobwebView_spiderLevelColor, getResources().getColor(R.color.custom_progress_blue_header));//蛛网等级描边颜色
+        mSpiderLevelStrokeColor2 = a.getColor(R.styleable.RxCobwebView_spiderLevelColor2, getResources().getColor(R.color.custom_progress_green_header));//蛛网等级描边颜色
+        mSpiderLevelColor = RxImageTool.changeColorAlpha(mSpiderLevelStrokeColor, 0);//蛛网等级颜色
+        mSpiderLevelColor2 = RxImageTool.changeColorAlpha(mSpiderLevelStrokeColor2, 0);//蛛网等级颜色
         mSpiderLevelStroke = a.getBoolean(R.styleable.RxCobwebView_spiderLevelStroke, true);//是否需要 蛛网等级描边
         mSpiderRotate = a.getBoolean(R.styleable.RxCobwebView_spiderRotate, true);//是否需要 蛛网等级描边
-        mSpiderLevelStrokeWidth = a.getFloat(R.styleable.RxCobwebView_spiderLevelStrokeWidth, 3f);//蛛网等级描边 宽度
+        mSpiderLevelStrokeWidth = a.getFloat(R.styleable.RxCobwebView_spiderLevelStrokeWidth, 10f);//蛛网等级描边 宽度
         mSpiderMaxLevel = a.getInteger(R.styleable.RxCobwebView_spiderMaxLevel, 4);//蛛网最大层级数
         mSpiderNameSize = a.getDimensionPixelSize(R.styleable.RxCobwebView_spiderNameSize, RxImageTool.dp2px(16));//标题字体大小
         a.recycle();
@@ -201,13 +213,14 @@ public class RxCobwebView extends View {
             drawCobweb(canvas, position);
         }
         drawSpiderRadiusLine(canvas);
-        drawSpiderLevel(canvas);
+        drawSpiderLevel(canvas, mSpiderList,mSpiderLevelColor, mSpiderLevelStrokeColor);
+        drawSpiderLevel(canvas, mSpiderList2,mSpiderLevelColor2, mSpiderLevelStrokeColor2);
     }
 
     /**
      * 绘制等级进度
      */
-    private void drawSpiderLevel(Canvas canvas) {
+    private void drawSpiderLevel(Canvas canvas, List<ModelSpider> mSpiderList, int mSpiderLevelColor, int mSpiderLevelStrokeColor) {
         Path path = new Path();
 
         float nextAngle;
@@ -336,7 +349,7 @@ public class RxCobwebView extends View {
                 scoreStrokePaint.setStyle(Paint.Style.STROKE);
                 scoreStrokePaint.setAntiAlias(true);
                 if (mSpiderLevelStrokeWidth > 0) {
-                    scoreStrokePaint.setStrokeWidth(mSpiderLevelStrokeWidth);
+                    scoreStrokePaint.setStrokeWidth(3);
                 }
             }
             canvas.drawPath(path, scoreStrokePaint);
@@ -411,6 +424,12 @@ public class RxCobwebView extends View {
         invalidate();
     }
 
+    public void setSpiderList2(@NonNull List<ModelSpider> spiderList) {
+        mSpiderList2 = spiderList;
+        mSpiderNumber = mSpiderList2.size();
+        invalidate();
+    }
+
     public int getSpiderColor() {
         return mSpiderColor;
     }
@@ -436,10 +455,15 @@ public class RxCobwebView extends View {
 
     public void setSpiderLevelColor(int spiderLevelColor) {
         mSpiderLevelStrokeColor = spiderLevelColor;
-        mSpiderLevelColor = RxImageTool.changeColorAlpha(mSpiderLevelStrokeColor, (255 / 2));
+        mSpiderLevelColor = RxImageTool.changeColorAlpha(mSpiderLevelStrokeColor, 0);
         invalidate();
     }
 
+    public void setSpiderLevelColor2(int spiderLevelColor) {
+        mSpiderLevelStrokeColor2 = spiderLevelColor;
+        mSpiderLevelColor2 = RxImageTool.changeColorAlpha(mSpiderLevelStrokeColor2, 0);
+        invalidate();
+    }
     public boolean isSpiderLevelStroke() {
         return mSpiderLevelStroke;
     }
